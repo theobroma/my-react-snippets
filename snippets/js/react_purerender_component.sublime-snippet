@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+import React from 'react';
+
+export default class ${1:${TM_FILENAME/(.?\w*)(?:\.\w+)*$/$1/g}} extends React.PureComponent {
+	static propTypes = {
+		${3:name}: React.PropTypes.${4:string},
+	};
+
+	constructor(props) {
+		super(props);
+	}
+
+	render() {
+		return (
+			<${5:div}></${5:div}>
+		);
+	}
+}
+
+]]></content>
+    <tabTrigger>rpc</tabTrigger>
+    <scope>source.js</scope>
+    <description>React: pure render component skeleton</description>
+</snippet>
